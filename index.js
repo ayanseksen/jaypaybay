@@ -5,8 +5,7 @@ require('dotenv').config();
 const Telegraf = require('telegraf');
 const transformString = require('./transform-string.js');
 
-const bot = new Telegraf(TOKEN, {polling:true});
-
+const bot = new Telegraf(process.env.JAYPAYBOT_TOKEN);
 bot.command('/start', ctx => {
   ctx.reply(
     'Добро пожаловать в бот, который поможет вам транслитерировать казахские слова на казахскую латиницу!\nПросто напишите ему любой текст и он проведёт транслитерацию.\nАвтор: @drugoi\nОтдельная благодарность: @talgautb'
