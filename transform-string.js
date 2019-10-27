@@ -1,4 +1,4 @@
-const qazLatyn = require('test.js');
+const qazLatyn = require('./test.js');
 
 const transformString = text => {
   let result = '';
