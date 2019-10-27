@@ -6,6 +6,6 @@ const bot = new TelegramBot(TOKEN, {polling:true})
 
 
 bot.on('message', msg => {
-	bot.sendMessage(msg.chat.id, 'Hello from JayPay, bot says: "Hi, ${msg.from.first_name}"')
+	bot.sendMessage(msg.chat.id, `Hello from JayPay, bot says: "Hi, ${msg.from.first_name}"`)
 })
 
