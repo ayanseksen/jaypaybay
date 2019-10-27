@@ -1,5 +1,3 @@
-const TOKEN = '937827713:AAHewPehu_Nayj9ORu1NGBv2u3iUSNJzEcw'
-
 require('dotenv').config();
 
 const Telegraf = require('telegraf');
