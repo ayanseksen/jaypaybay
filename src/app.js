@@ -4,8 +4,8 @@ const TelegramBot = require('node-telegram-bot-api');
 const transliterator = require('./transliterator.js');
 
 // replace the value below with the Telegram token you receive from @BotFather
-const token = process.env.'937827713:AAHewPehu_Nayj9ORu1NGBv2u3iUSNJzEcw';
-const bot = new TelegramBot(token, {polling: true});
+const token = '937827713:AAHewPehu_Nayj9ORu1NGBv2u3iUSNJzEcw';
+const bot = new TelegramBot(TOKEN, {polling: true});
 
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
